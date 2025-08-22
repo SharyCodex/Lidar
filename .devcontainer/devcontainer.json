@@ -1,0 +1,111 @@
+{
+  "name": "ROS2 Point-LIO Unilidar L1",
+  "build": {
+    "dockerfile": "Dockerfile.simple",
+    "context": ".",
+    "args": {
+      "BUILDKIT_INLINE_CACHE": "1"
+    }
+  },
+  "runArgs": [
+    "--privileged",
+    "--network=host",
+    "--device=/dev/bus/usb:/dev/bus/usb",
+    "--volume=/tmp/.X11-unix:/tmp/.X11-unix:ro",
+    "--volume=${localEnv:HOME}/.Xauthority:/root/.Xauthority:ro"
+  ],
+  "mounts": [
+    "source=/dev,target=/dev,type=bind"
+  ],
+  "containerEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}",
+    "XAUTHORITY": "/root/.Xauthority",
+    "QT_X11_NO_MITSHM": "1",
+    "ROS_DOMAIN_ID": "0",
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    "DEBIAN_FRONTEND": "noninteractive"
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-iot.vscode-ros",
+        "ms-python.python",
+        "twxs.cmake",
+        "ms-vscode.hexeditor",
+        "GitHub.copilot"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "cmake.configureOnOpen": false,
+        "ros.distro": "foxy",
+        "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+        "C_Cpp.default.cStandard": "c11",
+        "C_Cpp.default.cppStandard": "c++17"
+      }
+    }
+  },
+  "remoteUser": "root",
+  "initializeCommand": "bash -lc 'xhost +si:localuser:root || true'",
+  "postCreateCommand": "bash -lc 'apt-get update && apt-get install -y ros-foxy-pcl-ros ros-foxy-pcl-conversions && source /opt/ros/foxy/setup.bash && if [ -f /workspace/build.sh ]; then chmod +x /workspace/build.sh && /workspace/build.sh; else echo \"build.sh not found, skipping build\"; fi && echo \"Dev container ready - L1 LiDAR + SLAM system setup complete!\"'",
+  "updateContentCommand": "echo 'Updating container content...'"
+}
+
+// {
+//   "name": "ROS2 Point-LIO Unilidar L1",
+//   "build": { 
+//     "dockerfile": "Dockerfile.simple", 
+//     "context": ".",
+//     "args": {
+//       "BUILDKIT_INLINE_CACHE": "1"
+//     }
+//   },
+//   "runArgs": [
+//     "--privileged",
+//     "--network=host",
+//     "--device=/dev/bus/usb:/dev/bus/usb",
+//     "--volume=/tmp/.X11-unix:/tmp/.X11-unix:ro"
+//   ],
+//   "mounts": [
+//     "source=/dev,target=/dev,type=bind"
+//   ],
+//   "containerEnv": {
+//     "DISPLAY": "${localEnv:DISPLAY}",
+//     "QT_X11_NO_MITSHM": "1",
+//     "ROS_DOMAIN_ID": "0",
+//     "LIBGL_ALWAYS_SOFTWARE": "1",
+//     "DEBIAN_FRONTEND": "noninteractive"
+//   },
+//   "workspaceFolder": "/workspace",
+//   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+//   "customizations": {
+//     "vscode": {
+//       "extensions": [
+//         "ms-vscode.cpptools",
+//         "ms-vscode.cmake-tools", 
+//         "ms-iot.vscode-ros",
+//         "ms-python.python",
+//         "twxs.cmake",
+//         "ms-vscode.hexeditor",
+//         "GitHub.copilot"
+//       ],
+//       "settings": {
+//         "terminal.integrated.defaultProfile.linux": "bash",
+//         "python.defaultInterpreterPath": "/usr/bin/python3",
+//         "cmake.configureOnOpen": false,
+//         "ros.distro": "foxy",
+//         "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+//         "C_Cpp.default.cStandard": "c11",
+//         "C_Cpp.default.cppStandard": "c++17"
+//       }
+//     }
+//   },
+//   "remoteUser": "root",
+//   "postCreateCommand": "bash -c 'source /opt/ros/foxy/setup.bash && if [ -f /workspace/build.sh ]; then chmod +x /workspace/build.sh && /workspace/build.sh; else echo \"build.sh not found, skipping build\"; fi && echo \"Dev container ready - L1 LiDAR + SLAM system setup complete!\"'",
+//   "initializeCommand": "echo 'Initializing dev container...'",
+//   "updateContentCommand": "echo 'Updating container content...'"
+// }

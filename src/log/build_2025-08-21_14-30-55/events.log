@@ -1,0 +1,738 @@
+[0.000000] (-) TimerEvent: {}
+[0.000409] (point_lio) JobQueued: {'identifier': 'point_lio', 'dependencies': OrderedDict()}
+[0.000532] (unitree_lidar_ros2) JobQueued: {'identifier': 'unitree_lidar_ros2', 'dependencies': OrderedDict()}
+[0.000559] (unitree_lidar_sdk) JobQueued: {'identifier': 'unitree_lidar_sdk', 'dependencies': OrderedDict()}
+[0.000741] (point_lio) JobStarted: {'identifier': 'point_lio'}
+[0.010153] (unitree_lidar_ros2) JobStarted: {'identifier': 'unitree_lidar_ros2'}
+[0.019271] (unitree_lidar_sdk) JobStarted: {'identifier': 'unitree_lidar_sdk'}
+[0.029046] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'cmake'}
+[0.029606] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/point_lio_ros2', '-DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio'], 'cwd': '/workspace/src/build/point_lio', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/point_lio'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.035485] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'cmake'}
+[0.035989] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/unilidar_sdk/unitree_lidar_ros2/src/unitree_lidar_ros2', '-DCMAKE_INSTALL_PREFIX=/workspace/src/install/unitree_lidar_ros2'], 'cwd': '/workspace/src/build/unitree_lidar_ros2', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.040335] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'cmake'}
+[0.040782] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'build'}
+[0.041447] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/unitree_lidar_sdk', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/unitree_lidar_sdk', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1')]), 'shell': False}
+[0.046799] (point_lio) StdoutLine: {'line': b'-- Current CPU architecture: x86_64\n'}
+[0.051779] (point_lio) StdoutLine: {'line': b'-- Processor number:  16\n'}
+[0.052175] (point_lio) StdoutLine: {'line': b'-- core for MP:  3\n'}
+[0.052269] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.054033] (point_lio) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.076170] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.076425] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.076484] (point_lio) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.076564] (point_lio) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.088607] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target unilidar_publisher_udp\x1b[0m\n'}
+[0.088876] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target unilidar_subscriber_udp\x1b[0m\n'}
+[0.088988] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example_lidar_udp\x1b[0m\n'}
+[0.089075] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example_lidar\x1b[0m\n'}
+[0.099026] (-) TimerEvent: {}
+[0.099742] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/unilidar_publisher_udp.dir/examples/unilidar_publisher_udp.cpp.o\x1b[0m\n'}
+[0.099972] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/example_lidar_udp.dir/examples/example_lidar_udp.cpp.o\x1b[0m\n'}
+[0.100052] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/unilidar_subscriber_udp.dir/examples/unilidar_subscriber_udp.cpp.o\x1b[0m\n'}
+[0.100125] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/example_lidar.dir/examples/example_lidar.cpp.o\x1b[0m\n'}
+[0.199135] (-) TimerEvent: {}
+[0.229608] (point_lio) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.274779] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.283271] (point_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.291810] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.299261] (-) TimerEvent: {}
+[0.337979] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.344699] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.381655] (point_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.399387] (-) TimerEvent: {}
+[0.409724] (point_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.425274] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.458685] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.477013] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/unilidar_subscriber_udp\x1b[0m\n'}
+[0.478087] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/example_lidar\x1b[0m\n'}
+[0.487143] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499239] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/example_lidar_udp\x1b[0m\n'}
+[0.499562] (-) TimerEvent: {}
+[0.514857] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/unilidar_publisher_udp\x1b[0m\n'}
+[0.547853] (point_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.548128] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.549954] (point_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.551427] (point_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.569196] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target unilidar_subscriber_udp\n'}
+[0.574345] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target example_lidar\n'}
+[0.594791] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target example_lidar_udp\n'}
+[0.599691] (-) TimerEvent: {}
+[0.600592] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.601658] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.602369] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.604596] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target unilidar_publisher_udp\n'}
+[0.619784] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[0.625977] (point_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.626273] (point_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.665353] (unitree_lidar_sdk) JobEnded: {'identifier': 'unitree_lidar_sdk', 'rc': 0}
+[0.674726] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.675102] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.699839] (-) TimerEvent: {}
+[0.701944] (point_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.702208] (point_lio) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.750328] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.750623] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.764767] (point_lio) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.765061] (point_lio) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.799972] (-) TimerEvent: {}
+[0.808628] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.808957] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.829505] (point_lio) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.830407] (point_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.876943] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.877751] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900083] (-) TimerEvent: {}
+[0.944352] (point_lio) StdoutLine: {'line': b'-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[0.945741] (point_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.970880] (point_lio) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[0.988685] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.000174] (-) TimerEvent: {}
+[1.021929] (point_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.069839] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)\n'}
+[1.072220] (point_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.2.1 (/opt/ros/foxy/share/pcl_ros/cmake)\n'}
+[1.100274] (-) TimerEvent: {}
+[1.200579] (-) TimerEvent: {}
+[1.204351] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.221124] (unitree_lidar_ros2) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[1.258455] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.258942] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[1.280200] (point_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[1.282420] (point_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[1.292937] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex \n'}
+[1.300651] (-) TimerEvent: {}
+[1.309775] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.329531] (unitree_lidar_ros2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.379409] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.400825] (-) TimerEvent: {}
+[1.428907] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.429181] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.429268] (unitree_lidar_ros2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.429345] (unitree_lidar_ros2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.429486] (unitree_lidar_ros2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.429776] (unitree_lidar_ros2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.430031] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.430092] (unitree_lidar_ros2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.430137] (unitree_lidar_ros2) StdoutLine: {'line': b'\n'}
+[1.430457] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.430716] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.430829] (unitree_lidar_ros2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.430928] (unitree_lidar_ros2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.431019] (unitree_lidar_ros2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.431129] (unitree_lidar_ros2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.431271] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.431391] (unitree_lidar_ros2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.431530] (unitree_lidar_ros2) StdoutLine: {'line': b'\n'}
+[1.431633] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.431721] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.431812] (unitree_lidar_ros2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.431900] (unitree_lidar_ros2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.431994] (unitree_lidar_ros2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.432076] (unitree_lidar_ros2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.432159] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.432241] (unitree_lidar_ros2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.432322] (unitree_lidar_ros2) StdoutLine: {'line': b'\n'}
+[1.432404] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.432485] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.432575] (unitree_lidar_ros2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.432660] (unitree_lidar_ros2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.433055] (unitree_lidar_ros2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.433132] (unitree_lidar_ros2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.433200] (unitree_lidar_ros2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.433268] (unitree_lidar_ros2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.433334] (unitree_lidar_ros2) StdoutLine: {'line': b'\n'}
+[1.449788] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.453456] (unitree_lidar_ros2) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.456528] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.456811] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.456890] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** io features related to openni will be disabled\n'}
+[1.461285] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.464777] (unitree_lidar_ros2) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.467150] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.467396] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[1.467525] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** io features related to openni2 will be disabled\n'}
+[1.467661] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** io features related to pcap will be disabled\n'}
+[1.467784] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** io features related to png will be disabled\n'}
+[1.478976] (unitree_lidar_ros2) StdoutLine: {'line': b'-- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) \n'}
+[1.479413] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** io features related to libusb-1.0 will be disabled\n'}
+[1.484616] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.487919] (unitree_lidar_ros2) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.490577] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.490836] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.490954] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** visualization features related to openni will be disabled\n'}
+[1.495052] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.498058] (unitree_lidar_ros2) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.500893] (-) TimerEvent: {}
+[1.501275] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.501566] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[1.501664] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** visualization features related to openni2 will be disabled\n'}
+[1.520909] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[1.521253] (unitree_lidar_ros2) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[1.525360] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.528119] (unitree_lidar_ros2) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.530933] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.531152] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.531254] (unitree_lidar_ros2) StderrLine: {'line': b'** WARNING ** apps features related to openni will be disabled\n'}
+[1.541297] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.541953] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.542108] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.542683] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.542842] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.543389] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.543543] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.544239] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.544420] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.544969] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.545240] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.545746] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.545953] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.546163] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[1.546611] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.547078] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[1.547262] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.548199] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.548472] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.549174] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.549447] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.550132] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.550335] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.550979] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.551286] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.551926] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.552210] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.552821] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.553085] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.553901] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.554242] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.555037] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.555339] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.555991] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.556249] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.556899] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.557238] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.557905] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.558135] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.558727] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.559365] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.559708] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  \n'}
+[1.559888] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.560260] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  \n'}
+[1.560429] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.561095] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.561370] (unitree_lidar_ros2) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.562230] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.563267] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  \n'}
+[1.601014] (-) TimerEvent: {}
+[1.641238] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.667164] (point_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.678610] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[1.679832] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Build files have been written to: /workspace/src/build/unitree_lidar_ros2\n'}
+[1.681996] (point_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[1.690261] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[1.690931] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'build'}
+[1.691337] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/unitree_lidar_ros2', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/unitree_lidar_ros2', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.701151] (-) TimerEvent: {}
+[1.719952] (point_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.720299] (point_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[1.738353] (unitree_lidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target unitree_lidar_ros2_node\x1b[0m\n'}
+[1.767886] (point_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.782317] (point_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.801308] (-) TimerEvent: {}
+[1.807824] (unitree_lidar_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/unitree_lidar_ros2_node.dir/src/unitree_lidar_ros2_node.cpp.o\x1b[0m\n'}
+[1.821936] (point_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.863977] (point_lio) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.864276] (point_lio) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.864389] (point_lio) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.864470] (point_lio) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.864822] (point_lio) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.864964] (point_lio) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.865036] (point_lio) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.865127] (point_lio) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.865202] (point_lio) StdoutLine: {'line': b'\n'}
+[1.865281] (point_lio) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.865358] (point_lio) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.865436] (point_lio) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.865559] (point_lio) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.865646] (point_lio) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.865724] (point_lio) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.865851] (point_lio) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.865931] (point_lio) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.866011] (point_lio) StdoutLine: {'line': b'\n'}
+[1.866090] (point_lio) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.866167] (point_lio) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.866246] (point_lio) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.866329] (point_lio) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.866415] (point_lio) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.866489] (point_lio) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.866575] (point_lio) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.866652] (point_lio) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.866735] (point_lio) StdoutLine: {'line': b'\n'}
+[1.866807] (point_lio) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.866881] (point_lio) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.866952] (point_lio) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.867026] (point_lio) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.867096] (point_lio) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.867172] (point_lio) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.867245] (point_lio) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.867318] (point_lio) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.867391] (point_lio) StdoutLine: {'line': b'\n'}
+[1.880704] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.883449] (point_lio) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.885779] (point_lio) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.885926] (point_lio) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.890173] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.893041] (point_lio) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.895106] (point_lio) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.895252] (point_lio) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[1.901453] (-) TimerEvent: {}
+[1.908396] (point_lio) StdoutLine: {'line': b'-- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) \n'}
+[1.914587] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.918747] (point_lio) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.922116] (point_lio) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.922269] (point_lio) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.927267] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.930268] (point_lio) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.934231] (point_lio) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.934356] (point_lio) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[1.950155] (point_lio) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[1.950380] (point_lio) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[1.955445] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.959227] (point_lio) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.961912] (point_lio) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.962055] (point_lio) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.971998] (point_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.972778] (point_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.973597] (point_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.974352] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.975151] (point_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.975855] (point_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.976291] (point_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[1.976641] (point_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[1.977438] (point_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.978231] (point_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.979040] (point_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.979778] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.980717] (point_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.981677] (point_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.982472] (point_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.983309] (point_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.984142] (point_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.984986] (point_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.985962] (point_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.987006] (point_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.987958] (point_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  \n'}
+[1.988610] (point_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  \n'}
+[1.989366] (point_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.990190] (point_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.001526] (-) TimerEvent: {}
+[2.101859] (-) TimerEvent: {}
+[2.165556] (point_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[2.201996] (-) TimerEvent: {}
+[2.302350] (-) TimerEvent: {}
+[2.402719] (-) TimerEvent: {}
+[2.503131] (-) TimerEvent: {}
+[2.514678] (point_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found version "3.8.10") \n'}
+[2.593374] (point_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.603381] (-) TimerEvent: {}
+[2.630273] (point_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[2.631745] (point_lio) StdoutLine: {'line': b'-- Build files have been written to: /workspace/src/build/point_lio\n'}
+[2.646057] (point_lio) CommandEnded: {'returncode': 0}
+[2.647137] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'build'}
+[2.647500] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/point_lio', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/point_lio', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/point_lio'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.703563] (-) TimerEvent: {}
+[2.706823] (point_lio) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pointlio_mapping\x1b[0m\n'}
+[2.801824] (point_lio) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[2.802173] (point_lio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[2.802270] (point_lio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o\x1b[0m\n'}
+[2.803598] (-) TimerEvent: {}
+[2.804815] (point_lio) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o\x1b[0m\n'}
+[2.805026] (point_lio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[2.903832] (-) TimerEvent: {}
+[3.004565] (-) TimerEvent: {}
+[3.105073] (-) TimerEvent: {}
+[3.205590] (-) TimerEvent: {}
+[3.308281] (-) TimerEvent: {}
+[3.408946] (-) TimerEvent: {}
+[3.509957] (-) TimerEvent: {}
+[3.610440] (-) TimerEvent: {}
+[3.711290] (-) TimerEvent: {}
+[3.811785] (-) TimerEvent: {}
+[3.912458] (-) TimerEvent: {}
+[4.012949] (-) TimerEvent: {}
+[4.113429] (-) TimerEvent: {}
+[4.214870] (-) TimerEvent: {}
+[4.315246] (-) TimerEvent: {}
+[4.415660] (-) TimerEvent: {}
+[4.516132] (-) TimerEvent: {}
+[4.616551] (-) TimerEvent: {}
+[4.716981] (-) TimerEvent: {}
+[4.817446] (-) TimerEvent: {}
+[4.917934] (-) TimerEvent: {}
+[5.018366] (-) TimerEvent: {}
+[5.118815] (-) TimerEvent: {}
+[5.219240] (-) TimerEvent: {}
+[5.319748] (-) TimerEvent: {}
+[5.420198] (-) TimerEvent: {}
+[5.520631] (-) TimerEvent: {}
+[5.621067] (-) TimerEvent: {}
+[5.721482] (-) TimerEvent: {}
+[5.821885] (-) TimerEvent: {}
+[5.922310] (-) TimerEvent: {}
+[6.022833] (-) TimerEvent: {}
+[6.123530] (-) TimerEvent: {}
+[6.224088] (-) TimerEvent: {}
+[6.324760] (-) TimerEvent: {}
+[6.425204] (-) TimerEvent: {}
+[6.525592] (-) TimerEvent: {}
+[6.626034] (-) TimerEvent: {}
+[6.726627] (-) TimerEvent: {}
+[6.827033] (-) TimerEvent: {}
+[6.927448] (-) TimerEvent: {}
+[7.027959] (-) TimerEvent: {}
+[7.128630] (-) TimerEvent: {}
+[7.229111] (-) TimerEvent: {}
+[7.329500] (-) TimerEvent: {}
+[7.429978] (-) TimerEvent: {}
+[7.530604] (-) TimerEvent: {}
+[7.631192] (-) TimerEvent: {}
+[7.731730] (-) TimerEvent: {}
+[7.832236] (-) TimerEvent: {}
+[7.932799] (-) TimerEvent: {}
+[8.033201] (-) TimerEvent: {}
+[8.133636] (-) TimerEvent: {}
+[8.234016] (-) TimerEvent: {}
+[8.334436] (-) TimerEvent: {}
+[8.434862] (-) TimerEvent: {}
+[8.535270] (-) TimerEvent: {}
+[8.635712] (-) TimerEvent: {}
+[8.736124] (-) TimerEvent: {}
+[8.836521] (-) TimerEvent: {}
+[8.937012] (-) TimerEvent: {}
+[9.037431] (-) TimerEvent: {}
+[9.137821] (-) TimerEvent: {}
+[9.238234] (-) TimerEvent: {}
+[9.338722] (-) TimerEvent: {}
+[9.439152] (-) TimerEvent: {}
+[9.539634] (-) TimerEvent: {}
+[9.640066] (-) TimerEvent: {}
+[9.740460] (-) TimerEvent: {}
+[9.840969] (-) TimerEvent: {}
+[9.941385] (-) TimerEvent: {}
+[10.041822] (-) TimerEvent: {}
+[10.142232] (-) TimerEvent: {}
+[10.242643] (-) TimerEvent: {}
+[10.343098] (-) TimerEvent: {}
+[10.443499] (-) TimerEvent: {}
+[10.543944] (-) TimerEvent: {}
+[10.644366] (-) TimerEvent: {}
+[10.744794] (-) TimerEvent: {}
+[10.845184] (-) TimerEvent: {}
+[10.945596] (-) TimerEvent: {}
+[11.045999] (-) TimerEvent: {}
+[11.146426] (-) TimerEvent: {}
+[11.246875] (-) TimerEvent: {}
+[11.347247] (-) TimerEvent: {}
+[11.447713] (-) TimerEvent: {}
+[11.548181] (-) TimerEvent: {}
+[11.648641] (-) TimerEvent: {}
+[11.749038] (-) TimerEvent: {}
+[11.849451] (-) TimerEvent: {}
+[11.949920] (-) TimerEvent: {}
+[12.050344] (-) TimerEvent: {}
+[12.150741] (-) TimerEvent: {}
+[12.251130] (-) TimerEvent: {}
+[12.351665] (-) TimerEvent: {}
+[12.452095] (-) TimerEvent: {}
+[12.552658] (-) TimerEvent: {}
+[12.653240] (-) TimerEvent: {}
+[12.753659] (-) TimerEvent: {}
+[12.854179] (-) TimerEvent: {}
+[12.954856] (-) TimerEvent: {}
+[13.055457] (-) TimerEvent: {}
+[13.155815] (-) TimerEvent: {}
+[13.256284] (-) TimerEvent: {}
+[13.356962] (-) TimerEvent: {}
+[13.457554] (-) TimerEvent: {}
+[13.557964] (-) TimerEvent: {}
+[13.658322] (-) TimerEvent: {}
+[13.758764] (-) TimerEvent: {}
+[13.859247] (-) TimerEvent: {}
+[13.959652] (-) TimerEvent: {}
+[14.060087] (-) TimerEvent: {}
+[14.160533] (-) TimerEvent: {}
+[14.261044] (-) TimerEvent: {}
+[14.361510] (-) TimerEvent: {}
+[14.462002] (-) TimerEvent: {}
+[14.562426] (-) TimerEvent: {}
+[14.662970] (-) TimerEvent: {}
+[14.763335] (-) TimerEvent: {}
+[14.863897] (-) TimerEvent: {}
+[14.964311] (-) TimerEvent: {}
+[15.064829] (-) TimerEvent: {}
+[15.165221] (-) TimerEvent: {}
+[15.265652] (-) TimerEvent: {}
+[15.366191] (-) TimerEvent: {}
+[15.466900] (-) TimerEvent: {}
+[15.567364] (-) TimerEvent: {}
+[15.667743] (-) TimerEvent: {}
+[15.768145] (-) TimerEvent: {}
+[15.820331] (unitree_lidar_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable unitree_lidar_ros2_node\x1b[0m\n'}
+[15.868267] (-) TimerEvent: {}
+[15.968675] (-) TimerEvent: {}
+[16.069188] (-) TimerEvent: {}
+[16.169532] (-) TimerEvent: {}
+[16.267840] (unitree_lidar_ros2) StdoutLine: {'line': b'[100%] Built target unitree_lidar_ros2_node\n'}
+[16.269588] (-) TimerEvent: {}
+[16.278599] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[16.304073] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'install'}
+[16.316647] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/src/build/unitree_lidar_ros2'], 'cwd': '/workspace/src/build/unitree_lidar_ros2', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[16.326169] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.326496] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node\n'}
+[16.327699] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Set runtime path of "/workspace/src/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node" to ""\n'}
+[16.328229] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/view.rviz\n'}
+[16.328285] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/launch.py\n'}
+[16.328347] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2\n'}
+[16.328447] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2\n'}
+[16.328569] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.sh\n'}
+[16.328663] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.dsv\n'}
+[16.328753] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.sh\n'}
+[16.328840] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.dsv\n'}
+[16.328922] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.bash\n'}
+[16.329034] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.sh\n'}
+[16.329123] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.zsh\n'}
+[16.329215] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.dsv\n'}
+[16.329307] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.dsv\n'}
+[16.329452] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/ament_index/resource_index/packages/unitree_lidar_ros2\n'}
+[16.329561] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config.cmake\n'}
+[16.329637] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config-version.cmake\n'}
+[16.329706] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.xml\n'}
+[16.331432] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[16.370046] (-) TimerEvent: {}
+[16.372111] (unitree_lidar_ros2) JobEnded: {'identifier': 'unitree_lidar_ros2', 'rc': 0}
+[16.470177] (-) TimerEvent: {}
+[16.570580] (-) TimerEvent: {}
+[16.671072] (-) TimerEvent: {}
+[16.771575] (-) TimerEvent: {}
+[16.872304] (-) TimerEvent: {}
+[16.972965] (-) TimerEvent: {}
+[17.073486] (-) TimerEvent: {}
+[17.173820] (-) TimerEvent: {}
+[17.274308] (-) TimerEvent: {}
+[17.374847] (-) TimerEvent: {}
+[17.475357] (-) TimerEvent: {}
+[17.575827] (-) TimerEvent: {}
+[17.676335] (-) TimerEvent: {}
+[17.776648] (-) TimerEvent: {}
+[17.876953] (-) TimerEvent: {}
+[17.977431] (-) TimerEvent: {}
+[18.077914] (-) TimerEvent: {}
+[18.178213] (-) TimerEvent: {}
+[18.278587] (-) TimerEvent: {}
+[18.378918] (-) TimerEvent: {}
+[18.479312] (-) TimerEvent: {}
+[18.579762] (-) TimerEvent: {}
+[18.680108] (-) TimerEvent: {}
+[18.780437] (-) TimerEvent: {}
+[18.880755] (-) TimerEvent: {}
+[18.981124] (-) TimerEvent: {}
+[19.081505] (-) TimerEvent: {}
+[19.181812] (-) TimerEvent: {}
+[19.282092] (-) TimerEvent: {}
+[19.382403] (-) TimerEvent: {}
+[19.482809] (-) TimerEvent: {}
+[19.583273] (-) TimerEvent: {}
+[19.683753] (-) TimerEvent: {}
+[19.784271] (-) TimerEvent: {}
+[19.884601] (-) TimerEvent: {}
+[19.985003] (-) TimerEvent: {}
+[20.085531] (-) TimerEvent: {}
+[20.185991] (-) TimerEvent: {}
+[20.286432] (-) TimerEvent: {}
+[20.386836] (-) TimerEvent: {}
+[20.487120] (-) TimerEvent: {}
+[20.587489] (-) TimerEvent: {}
+[20.687831] (-) TimerEvent: {}
+[20.788139] (-) TimerEvent: {}
+[20.888443] (-) TimerEvent: {}
+[20.988757] (-) TimerEvent: {}
+[21.089072] (-) TimerEvent: {}
+[21.189434] (-) TimerEvent: {}
+[21.289781] (-) TimerEvent: {}
+[21.390122] (-) TimerEvent: {}
+[21.490403] (-) TimerEvent: {}
+[21.590707] (-) TimerEvent: {}
+[21.691032] (-) TimerEvent: {}
+[21.791340] (-) TimerEvent: {}
+[21.891622] (-) TimerEvent: {}
+[21.991894] (-) TimerEvent: {}
+[22.092182] (-) TimerEvent: {}
+[22.192451] (-) TimerEvent: {}
+[22.292781] (-) TimerEvent: {}
+[22.393071] (-) TimerEvent: {}
+[22.493470] (-) TimerEvent: {}
+[22.594092] (-) TimerEvent: {}
+[22.694600] (-) TimerEvent: {}
+[22.795075] (-) TimerEvent: {}
+[22.895666] (-) TimerEvent: {}
+[22.996173] (-) TimerEvent: {}
+[23.096555] (-) TimerEvent: {}
+[23.197012] (-) TimerEvent: {}
+[23.297634] (-) TimerEvent: {}
+[23.398252] (-) TimerEvent: {}
+[23.498915] (-) TimerEvent: {}
+[23.599582] (-) TimerEvent: {}
+[23.700216] (-) TimerEvent: {}
+[23.800717] (-) TimerEvent: {}
+[23.901035] (-) TimerEvent: {}
+[24.001370] (-) TimerEvent: {}
+[24.101711] (-) TimerEvent: {}
+[24.202093] (-) TimerEvent: {}
+[24.302455] (-) TimerEvent: {}
+[24.402811] (-) TimerEvent: {}
+[24.503160] (-) TimerEvent: {}
+[24.603532] (-) TimerEvent: {}
+[24.703944] (-) TimerEvent: {}
+[24.804304] (-) TimerEvent: {}
+[24.904762] (-) TimerEvent: {}
+[25.005237] (-) TimerEvent: {}
+[25.105750] (-) TimerEvent: {}
+[25.206085] (-) TimerEvent: {}
+[25.306457] (-) TimerEvent: {}
+[25.406822] (-) TimerEvent: {}
+[25.507368] (-) TimerEvent: {}
+[25.607751] (-) TimerEvent: {}
+[25.708224] (-) TimerEvent: {}
+[25.808755] (-) TimerEvent: {}
+[25.909276] (-) TimerEvent: {}
+[26.009867] (-) TimerEvent: {}
+[26.110268] (-) TimerEvent: {}
+[26.210744] (-) TimerEvent: {}
+[26.311076] (-) TimerEvent: {}
+[26.411602] (-) TimerEvent: {}
+[26.512184] (-) TimerEvent: {}
+[26.612843] (-) TimerEvent: {}
+[26.713502] (-) TimerEvent: {}
+[26.814154] (-) TimerEvent: {}
+[26.914736] (-) TimerEvent: {}
+[27.015146] (-) TimerEvent: {}
+[27.115683] (-) TimerEvent: {}
+[27.216277] (-) TimerEvent: {}
+[27.316863] (-) TimerEvent: {}
+[27.417500] (-) TimerEvent: {}
+[27.518073] (-) TimerEvent: {}
+[27.618465] (-) TimerEvent: {}
+[27.718814] (-) TimerEvent: {}
+[27.819131] (-) TimerEvent: {}
+[27.919449] (-) TimerEvent: {}
+[28.019836] (-) TimerEvent: {}
+[28.120167] (-) TimerEvent: {}
+[28.220533] (-) TimerEvent: {}
+[28.320812] (-) TimerEvent: {}
+[28.421111] (-) TimerEvent: {}
+[28.521411] (-) TimerEvent: {}
+[28.621742] (-) TimerEvent: {}
+[28.722042] (-) TimerEvent: {}
+[28.822494] (-) TimerEvent: {}
+[28.922998] (-) TimerEvent: {}
+[29.023321] (-) TimerEvent: {}
+[29.123628] (-) TimerEvent: {}
+[29.223959] (-) TimerEvent: {}
+[29.324315] (-) TimerEvent: {}
+[29.424626] (-) TimerEvent: {}
+[29.524919] (-) TimerEvent: {}
+[29.625190] (-) TimerEvent: {}
+[29.725471] (-) TimerEvent: {}
+[29.825747] (-) TimerEvent: {}
+[29.926086] (-) TimerEvent: {}
+[30.026490] (-) TimerEvent: {}
+[30.126771] (-) TimerEvent: {}
+[30.227070] (-) TimerEvent: {}
+[30.327377] (-) TimerEvent: {}
+[30.427691] (-) TimerEvent: {}
+[30.527976] (-) TimerEvent: {}
+[30.628349] (-) TimerEvent: {}
+[30.728735] (-) TimerEvent: {}
+[30.829139] (-) TimerEvent: {}
+[30.929442] (-) TimerEvent: {}
+[31.029781] (-) TimerEvent: {}
+[31.130227] (-) TimerEvent: {}
+[31.230506] (-) TimerEvent: {}
+[31.330798] (-) TimerEvent: {}
+[31.431222] (-) TimerEvent: {}
+[31.531709] (-) TimerEvent: {}
+[31.632067] (-) TimerEvent: {}
+[31.732620] (-) TimerEvent: {}
+[31.833147] (-) TimerEvent: {}
+[31.933493] (-) TimerEvent: {}
+[32.033826] (-) TimerEvent: {}
+[32.134237] (-) TimerEvent: {}
+[32.234757] (-) TimerEvent: {}
+[32.335063] (-) TimerEvent: {}
+[32.435374] (-) TimerEvent: {}
+[32.535673] (-) TimerEvent: {}
+[32.636001] (-) TimerEvent: {}
+[32.736406] (-) TimerEvent: {}
+[32.836921] (-) TimerEvent: {}
+[32.937405] (-) TimerEvent: {}
+[33.037684] (-) TimerEvent: {}
+[33.138116] (-) TimerEvent: {}
+[33.238653] (-) TimerEvent: {}
+[33.339081] (-) TimerEvent: {}
+[33.439440] (-) TimerEvent: {}
+[33.539946] (-) TimerEvent: {}
+[33.640483] (-) TimerEvent: {}
+[33.740849] (-) TimerEvent: {}
+[33.754098] (point_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointlio_mapping\x1b[0m\n'}
+[33.840974] (-) TimerEvent: {}
+[33.941329] (-) TimerEvent: {}
+[34.041749] (-) TimerEvent: {}
+[34.142227] (-) TimerEvent: {}
+[34.242786] (-) TimerEvent: {}
+[34.343227] (-) TimerEvent: {}
+[34.427736] (point_lio) StdoutLine: {'line': b'[100%] Built target pointlio_mapping\n'}
+[34.437308] (point_lio) CommandEnded: {'returncode': 0}
+[34.443313] (-) TimerEvent: {}
+[34.468260] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'install'}
+[34.468706] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/src/build/point_lio'], 'cwd': '/workspace/src/build/point_lio', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ae659aa-2605-4eb3-819e-96335187a8cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-24131403-742a-49db-94d9-af24cca59693.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-24131403-742a-49db-94d9-af24cca59693.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/point_lio'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[34.477197] (point_lio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.477405] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/lib/point_lio/pointlio_mapping\n'}
+[34.478679] (point_lio) StdoutLine: {'line': b'-- Set runtime path of "/workspace/src/install/point_lio/lib/point_lio/pointlio_mapping" to ""\n'}
+[34.478807] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config\n'}
+[34.478893] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/velody16.yaml\n'}
+[34.478976] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l2.yaml\n'}
+[34.479058] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/horizon.yaml\n'}
+[34.479150] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/ouster64.yaml\n'}
+[34.479230] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l1.yaml\n'}
+[34.479323] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/mid360.yaml\n'}
+[34.479407] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/config/avia.yaml\n'}
+[34.479486] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch\n'}
+[34.479613] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py\n'}
+[34.479715] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py\n'}
+[34.479799] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py\n'}
+[34.479925] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py\n'}
+[34.480009] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py\n'}
+[34.480088] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py\n'}
+[34.480196] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py\n'}
+[34.480427] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_avia.launch.py\n'}
+[34.480668] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py\n'}
+[34.480709] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py\n'}
+[34.480747] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/rviz_cfg\n'}
+[34.480843] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz\n'}
+[34.480882] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio\n'}
+[34.480924] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio\n'}
+[34.481015] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.sh\n'}
+[34.481063] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv\n'}
+[34.481138] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/environment/path.sh\n'}
+[34.481228] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/environment/path.dsv\n'}
+[34.481320] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.bash\n'}
+[34.481428] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.sh\n'}
+[34.481527] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.zsh\n'}
+[34.481655] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.dsv\n'}
+[34.481766] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/package.dsv\n'}
+[34.481907] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/ament_index/resource_index/packages/point_lio\n'}
+[34.482020] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[34.482113] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake\n'}
+[34.482181] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake\n'}
+[34.482273] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/package.xml\n'}
+[34.484181] (point_lio) CommandEnded: {'returncode': 0}
+[34.531252] (point_lio) JobEnded: {'identifier': 'point_lio', 'rc': 0}
+[34.532070] (-) EventReactorShutdown: {}

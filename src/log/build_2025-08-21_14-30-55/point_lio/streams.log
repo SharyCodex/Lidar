@@ -1,0 +1,179 @@
+[0.033s] Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /workspace/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio
+[0.046s] -- Current CPU architecture: x86_64
+[0.051s] -- Processor number:  16
+[0.051s] -- core for MP:  3
+[0.053s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.076s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.076s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.229s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.274s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.283s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.381s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.409s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.487s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.547s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.549s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.551s] -- Looking for pthread.h
+[0.625s] -- Looking for pthread.h - found
+[0.626s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.701s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.702s] -- Looking for pthread_create in pthreads
+[0.764s] -- Looking for pthread_create in pthreads - not found
+[0.764s] -- Looking for pthread_create in pthread
+[0.829s] -- Looking for pthread_create in pthread - found
+[0.830s] -- Found Threads: TRUE  
+[0.944s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[0.945s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.970s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.021s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.072s] -- Found pcl_ros: 2.2.1 (/opt/ros/foxy/share/pcl_ros/cmake)
+[1.280s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.282s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[1.667s] -- Checking for module 'eigen3'
+[1.681s] --   Found eigen3, version 3.3.7
+[1.719s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.720s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[1.767s] -- Checking for module 'flann'
+[1.782s] --   Found flann, version 1.9.1
+[1.821s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.863s] -- The imported target "vtkParseOGLExt" references the file
+[1.864s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.864s] but this file does not exist.  Possible reasons include:
+[1.864s] * The file was deleted, renamed, or moved to another location.
+[1.864s] * An install or uninstall procedure did not complete successfully.
+[1.864s] * The installation package was faulty and contained
+[1.864s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.864s] but not all the files it references.
+[1.864s] 
+[1.865s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.865s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.865s] but this file does not exist.  Possible reasons include:
+[1.865s] * The file was deleted, renamed, or moved to another location.
+[1.865s] * An install or uninstall procedure did not complete successfully.
+[1.865s] * The installation package was faulty and contained
+[1.865s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.865s] but not all the files it references.
+[1.865s] 
+[1.865s] -- The imported target "vtk" references the file
+[1.865s]    "/usr/bin/vtk"
+[1.866s] but this file does not exist.  Possible reasons include:
+[1.866s] * The file was deleted, renamed, or moved to another location.
+[1.866s] * An install or uninstall procedure did not complete successfully.
+[1.866s] * The installation package was faulty and contained
+[1.866s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.866s] but not all the files it references.
+[1.866s] 
+[1.866s] -- The imported target "pvtk" references the file
+[1.866s]    "/usr/bin/pvtk"
+[1.866s] but this file does not exist.  Possible reasons include:
+[1.866s] * The file was deleted, renamed, or moved to another location.
+[1.866s] * An install or uninstall procedure did not complete successfully.
+[1.866s] * The installation package was faulty and contained
+[1.867s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.867s] but not all the files it references.
+[1.867s] 
+[1.880s] -- Checking for module 'libusb-1.0'
+[1.883s] --   No package 'libusb-1.0' found
+[1.885s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.885s] -- OpenNI disabled because libusb-1.0 not found.
+[1.890s] -- Checking for module 'libusb-1.0'
+[1.892s] --   No package 'libusb-1.0' found
+[1.894s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.895s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[1.908s] -- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) 
+[1.914s] -- Checking for module 'libusb-1.0'
+[1.918s] --   No package 'libusb-1.0' found
+[1.921s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.922s] -- OpenNI disabled because libusb-1.0 not found.
+[1.927s] -- Checking for module 'libusb-1.0'
+[1.930s] --   No package 'libusb-1.0' found
+[1.934s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.934s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[1.950s] -- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  
+[1.950s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.955s] -- Checking for module 'libusb-1.0'
+[1.959s] --   No package 'libusb-1.0' found
+[1.961s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.961s] -- OpenNI disabled because libusb-1.0 not found.
+[1.971s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.972s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.973s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.974s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.974s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.975s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.976s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[1.976s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[1.977s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.978s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.978s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.979s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.980s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.981s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.982s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.983s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.983s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.984s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.985s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.986s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.987s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+[1.988s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+[1.989s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.989s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.165s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[2.514s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found version "3.8.10") 
+[2.593s] -- Configuring done
+[2.630s] -- Generating done
+[2.631s] -- Build files have been written to: /workspace/src/build/point_lio
+[2.646s] Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /workspace/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio
+[2.648s] Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/point_lio -- -j16 -l16
+[2.706s] [35m[1mScanning dependencies of target pointlio_mapping[0m
+[2.801s] [ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[2.801s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[2.802s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[2.804s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[2.804s] [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[33.753s] [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[34.427s] [100%] Built target pointlio_mapping
+[34.438s] Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/point_lio -- -j16 -l16
+[34.470s] Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/point_lio
+[34.477s] -- Install configuration: ""
+[34.477s] -- Installing: /workspace/src/install/point_lio/lib/point_lio/pointlio_mapping
+[34.478s] -- Set runtime path of "/workspace/src/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+[34.478s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config
+[34.478s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/velody16.yaml
+[34.478s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+[34.478s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/horizon.yaml
+[34.478s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/ouster64.yaml
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/mid360.yaml
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/config/avia.yaml
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[34.479s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/rviz_cfg
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/environment/path.sh
+[34.480s] -- Installing: /workspace/src/install/point_lio/share/point_lio/environment/path.dsv
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.bash
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.sh
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.zsh
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/local_setup.dsv
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/package.dsv
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[34.481s] -- Installing: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[34.482s] -- Installing: /workspace/src/install/point_lio/share/point_lio/package.xml
+[34.485s] Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/point_lio

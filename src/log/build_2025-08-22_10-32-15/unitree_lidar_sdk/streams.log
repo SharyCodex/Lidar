@@ -1,0 +1,6 @@
+[0.256s] Invoking command in '/workspace/src/build/unitree_lidar_sdk': /usr/bin/cmake --build /workspace/src/build/unitree_lidar_sdk -- -j16 -l16
+[0.480s] [ 25%] Built target unilidar_subscriber_udp
+[0.576s] [ 50%] Built target example_lidar
+[0.681s] [ 75%] Built target example_lidar_udp
+[0.759s] [100%] Built target unilidar_publisher_udp
+[0.832s] Invoked command in '/workspace/src/build/unitree_lidar_sdk' returned '0': /usr/bin/cmake --build /workspace/src/build/unitree_lidar_sdk -- -j16 -l16

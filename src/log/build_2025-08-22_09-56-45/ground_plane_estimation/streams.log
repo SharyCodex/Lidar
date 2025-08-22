@@ -1,0 +1,136 @@
+[0.063s] Invoking command in '/workspace/src/build/ground_plane_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+[0.119s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.153s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.349s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.388s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.391s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.633s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.635s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.797s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.910s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.986s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.283s] -- Found pcl_ros: 2.2.1 (/opt/ros/foxy/share/pcl_ros/cmake)
+[1.522s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.569s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[1.659s] -- The imported target "vtkParseOGLExt" references the file
+[1.660s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.661s] but this file does not exist.  Possible reasons include:
+[1.662s] * The file was deleted, renamed, or moved to another location.
+[1.662s] * An install or uninstall procedure did not complete successfully.
+[1.662s] * The installation package was faulty and contained
+[1.662s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.662s] but not all the files it references.
+[1.662s] 
+[1.662s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.662s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.665s] but this file does not exist.  Possible reasons include:
+[1.665s] * The file was deleted, renamed, or moved to another location.
+[1.665s] * An install or uninstall procedure did not complete successfully.
+[1.666s] * The installation package was faulty and contained
+[1.666s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.666s] but not all the files it references.
+[1.666s] 
+[1.666s] -- The imported target "vtk" references the file
+[1.666s]    "/usr/bin/vtk"
+[1.666s] but this file does not exist.  Possible reasons include:
+[1.666s] * The file was deleted, renamed, or moved to another location.
+[1.666s] * An install or uninstall procedure did not complete successfully.
+[1.666s] * The installation package was faulty and contained
+[1.668s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.668s] but not all the files it references.
+[1.668s] 
+[1.668s] -- The imported target "pvtk" references the file
+[1.668s]    "/usr/bin/pvtk"
+[1.668s] but this file does not exist.  Possible reasons include:
+[1.668s] * The file was deleted, renamed, or moved to another location.
+[1.668s] * An install or uninstall procedure did not complete successfully.
+[1.668s] * The installation package was faulty and contained
+[1.668s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.669s] but not all the files it references.
+[1.669s] 
+[1.688s] -- Checking for module 'libusb-1.0'
+[1.691s] --   No package 'libusb-1.0' found
+[1.695s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.695s] -- OpenNI disabled because libusb-1.0 not found.
+[1.700s] -- Checking for module 'libusb-1.0'
+[1.703s] --   No package 'libusb-1.0' found
+[1.706s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.706s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[1.724s] -- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) 
+[1.730s] -- Checking for module 'libusb-1.0'
+[1.739s] --   No package 'libusb-1.0' found
+[1.740s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.740s] -- OpenNI disabled because libusb-1.0 not found.
+[1.749s] -- Checking for module 'libusb-1.0'
+[1.752s] --   No package 'libusb-1.0' found
+[1.754s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.755s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[1.767s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.771s] -- Checking for module 'libusb-1.0'
+[1.779s] --   No package 'libusb-1.0' found
+[1.782s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.782s] -- OpenNI disabled because libusb-1.0 not found.
+[1.986s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[2.067s] CMake Warning (dev) at CMakeLists.txt:28 (find_package):
+[2.067s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.068s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.068s]   command to set the policy and suppress this warning.
+[2.068s] 
+[2.068s]   CMake variable PCL_ROOT is set to:
+[2.068s] 
+[2.068s]     /usr
+[2.068s] 
+[2.068s]   For compatibility, CMake is ignoring the variable.
+[2.068s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.068s] 
+[2.105s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.186s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.187s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.187s] -- Configured cppcheck include dirs: 
+[2.187s] -- Configured cppcheck exclude dirs and/or files: 
+[2.188s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.188s] -- Configured cpplint exclude dirs and/or files: 
+[2.188s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.189s] -- Added test 'lint_cmake' to check CMake code style
+[2.190s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.190s] -- Added test 'uncrustify' to check C / C++ code style
+[2.190s] -- Configured uncrustify additional arguments: 
+[2.191s] -- Added test 'xmllint' to check XML markup files
+[2.200s] -- Configuring done
+[2.265s] -- Generating done
+[2.268s] -- Build files have been written to: /workspace/src/build/ground_plane_estimation
+[2.307s] [35m[1mScanning dependencies of target ground_plane_estimation_node[0m
+[2.378s] [ 50%] [32mBuilding CXX object CMakeFiles/ground_plane_estimation_node.dir/src/ground_plane_estimation_node.cpp.o[0m
+[19.097s] [100%] [32m[1mLinking CXX executable ground_plane_estimation_node[0m
+[20.844s] [100%] Built target ground_plane_estimation_node
+[20.859s] Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+[20.892s] Invoking command in '/workspace/src/build/ground_plane_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation
+[20.905s] -- Install configuration: ""
+[20.905s] -- Installing: /workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node
+[20.908s] -- Set runtime path of "/workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node" to ""
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/ground_plane_estimation.launch.py
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/__pycache__
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/__pycache__/ground_plane_estimation.launch.cpython-38.pyc
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/point_lio_with_ground_estimation.launch.py
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/config
+[20.908s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/config/ground_plane_estimation.yaml
+[20.909s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/rviz
+[20.909s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/rviz/ground_plane_estimation.rviz
+[20.909s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/package_run_dependencies/ground_plane_estimation
+[20.909s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/parent_prefix_path/ground_plane_estimation
+[20.909s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.sh
+[20.909s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.dsv
+[20.912s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.sh
+[20.912s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.dsv
+[20.912s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.bash
+[20.912s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.sh
+[20.912s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.zsh
+[20.913s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.dsv
+[20.914s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.dsv
+[20.914s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/packages/ground_plane_estimation
+[20.914s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig.cmake
+[20.914s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig-version.cmake
+[20.914s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.xml
+[20.919s] Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation

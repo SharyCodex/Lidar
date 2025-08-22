@@ -1,0 +1,4 @@
+source;share/ground_plane_estimation/local_setup.bash
+source;share/ground_plane_estimation/local_setup.dsv
+source;share/ground_plane_estimation/local_setup.sh
+source;share/ground_plane_estimation/local_setup.zsh

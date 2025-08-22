@@ -1,0 +1,608 @@
+[0.000000] (-) TimerEvent: {}
+[0.001148] (ground_plane_estimation) JobQueued: {'identifier': 'ground_plane_estimation', 'dependencies': OrderedDict()}
+[0.002126] (point_lio) JobQueued: {'identifier': 'point_lio', 'dependencies': OrderedDict()}
+[0.002454] (unitree_lidar_ros2) JobQueued: {'identifier': 'unitree_lidar_ros2', 'dependencies': OrderedDict()}
+[0.003690] (unitree_lidar_sdk) JobQueued: {'identifier': 'unitree_lidar_sdk', 'dependencies': OrderedDict()}
+[0.004547] (ground_plane_estimation) JobStarted: {'identifier': 'ground_plane_estimation'}
+[0.076887] (point_lio) JobStarted: {'identifier': 'point_lio'}
+[0.099239] (-) TimerEvent: {}
+[0.120761] (unitree_lidar_ros2) JobStarted: {'identifier': 'unitree_lidar_ros2'}
+[0.167268] (unitree_lidar_sdk) JobStarted: {'identifier': 'unitree_lidar_sdk'}
+[0.199333] (-) TimerEvent: {}
+[0.235699] (ground_plane_estimation) JobProgress: {'identifier': 'ground_plane_estimation', 'progress': 'cmake'}
+[0.243588] (ground_plane_estimation) JobProgress: {'identifier': 'ground_plane_estimation', 'progress': 'build'}
+[0.244172] (ground_plane_estimation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/ground_plane_estimation', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/ground_plane_estimation', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/ground_plane_estimation'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy')]), 'shell': False}
+[0.282954] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'cmake'}
+[0.288163] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'build'}
+[0.290184] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/point_lio', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/point_lio', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/point_lio'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy')]), 'shell': False}
+[0.301777] (-) TimerEvent: {}
+[0.310957] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'cmake'}
+[0.318735] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'build'}
+[0.319825] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/unitree_lidar_ros2', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/unitree_lidar_ros2', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy')]), 'shell': False}
+[0.350606] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'cmake'}
+[0.352821] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'build'}
+[0.361459] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/unitree_lidar_sdk', '--', '-j16', '-l16'], 'cwd': '/workspace/src/build/unitree_lidar_sdk', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation')]), 'shell': False}
+[0.403156] (-) TimerEvent: {}
+[0.430389] (ground_plane_estimation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ground_plane_estimation_node\x1b[0m\n'}
+[0.503563] (-) TimerEvent: {}
+[0.561787] (point_lio) StdoutLine: {'line': b'[100%] Built target pointlio_mapping\n'}
+[0.574530] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 25%] Built target unilidar_subscriber_udp\n'}
+[0.608659] (point_lio) CommandEnded: {'returncode': 0}
+[0.615712] (-) TimerEvent: {}
+[0.619947] (ground_plane_estimation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ground_plane_estimation_node.dir/src/ground_plane_estimation_node.cpp.o\x1b[0m\n'}
+[0.627807] (unitree_lidar_ros2) StdoutLine: {'line': b'[100%] Built target unitree_lidar_ros2_node\n'}
+[0.651087] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] Built target example_lidar\n'}
+[0.685997] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[0.719539] (-) TimerEvent: {}
+[0.768410] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'install'}
+[0.769709] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 75%] Built target example_lidar_udp\n'}
+[0.823246] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/src/build/point_lio'], 'cwd': '/workspace/src/build/point_lio', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/point_lio'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy')]), 'shell': False}
+[0.834418] (-) TimerEvent: {}
+[0.847931] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'install'}
+[0.850272] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/src/build/unitree_lidar_ros2'], 'cwd': '/workspace/src/build/unitree_lidar_ros2', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/unitree_lidar_ros2'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy')]), 'shell': False}
+[0.880758] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target unilidar_publisher_udp\n'}
+[0.883572] (point_lio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.886350] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/lib/point_lio/pointlio_mapping\n'}
+[0.886581] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config\n'}
+[0.886659] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/velody16.yaml\n'}
+[0.886736] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l2.yaml\n'}
+[0.886802] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/horizon.yaml\n'}
+[0.886870] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/ouster64.yaml\n'}
+[0.886939] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l1.yaml\n'}
+[0.887013] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/mid360.yaml\n'}
+[0.887091] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/avia.yaml\n'}
+[0.900566] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch\n'}
+[0.902255] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py\n'}
+[0.902505] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py\n'}
+[0.904305] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py\n'}
+[0.904485] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py\n'}
+[0.904563] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py\n'}
+[0.904637] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py\n'}
+[0.904705] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py\n'}
+[0.904775] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_avia.launch.py\n'}
+[0.908706] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py\n'}
+[0.908940] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py\n'}
+[0.909043] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/rviz_cfg\n'}
+[0.909145] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz\n'}
+[0.909237] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio\n'}
+[0.909313] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio\n'}
+[0.909396] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.sh\n'}
+[0.909469] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv\n'}
+[0.909546] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/path.sh\n'}
+[0.909614] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/path.dsv\n'}
+[0.909702] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.bash\n'}
+[0.909774] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.sh\n'}
+[0.909848] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.zsh\n'}
+[0.909929] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.dsv\n'}
+[0.913003] (point_lio) StdoutLine: {'line': b'-- Installing: /workspace/src/install/point_lio/share/point_lio/package.dsv\n'}
+[0.913150] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/ament_index/resource_index/packages/point_lio\n'}
+[0.913227] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.913334] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake\n'}
+[0.913402] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake\n'}
+[0.913476] (point_lio) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/point_lio/share/point_lio/package.xml\n'}
+[0.913551] (point_lio) CommandEnded: {'returncode': 0}
+[0.914264] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.914411] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node\n'}
+[0.914488] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/view.rviz\n'}
+[0.914561] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/launch.py\n'}
+[0.914633] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2\n'}
+[0.914714] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2\n'}
+[0.914793] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.sh\n'}
+[0.914867] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.dsv\n'}
+[0.914947] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.sh\n'}
+[0.915041] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.dsv\n'}
+[0.915142] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.bash\n'}
+[0.915235] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.sh\n'}
+[0.915304] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.zsh\n'}
+[0.915376] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.dsv\n'}
+[0.915440] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.dsv\n'}
+[0.915510] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/ament_index/resource_index/packages/unitree_lidar_ros2\n'}
+[0.915582] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config.cmake\n'}
+[0.915657] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config-version.cmake\n'}
+[0.915742] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.xml\n'}
+[0.937304] (-) TimerEvent: {}
+[1.024810] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[1.045790] (-) TimerEvent: {}
+[1.129523] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[1.148406] (-) TimerEvent: {}
+[1.226153] (point_lio) JobEnded: {'identifier': 'point_lio', 'rc': 0}
+[1.249059] (-) TimerEvent: {}
+[1.279072] (unitree_lidar_ros2) JobEnded: {'identifier': 'unitree_lidar_ros2', 'rc': 0}
+[1.322770] (unitree_lidar_sdk) JobEnded: {'identifier': 'unitree_lidar_sdk', 'rc': 0}
+[1.350637] (-) TimerEvent: {}
+[1.459752] (-) TimerEvent: {}
+[1.561542] (-) TimerEvent: {}
+[1.666113] (-) TimerEvent: {}
+[1.775730] (-) TimerEvent: {}
+[1.876960] (-) TimerEvent: {}
+[1.978532] (-) TimerEvent: {}
+[2.085409] (-) TimerEvent: {}
+[2.188974] (-) TimerEvent: {}
+[2.294714] (-) TimerEvent: {}
+[2.401474] (-) TimerEvent: {}
+[2.504124] (-) TimerEvent: {}
+[2.605941] (-) TimerEvent: {}
+[2.710514] (-) TimerEvent: {}
+[2.813151] (-) TimerEvent: {}
+[2.920084] (-) TimerEvent: {}
+[3.021671] (-) TimerEvent: {}
+[3.122421] (-) TimerEvent: {}
+[3.225292] (-) TimerEvent: {}
+[3.329329] (-) TimerEvent: {}
+[3.435657] (-) TimerEvent: {}
+[3.539912] (-) TimerEvent: {}
+[3.643520] (-) TimerEvent: {}
+[3.748139] (-) TimerEvent: {}
+[3.850914] (-) TimerEvent: {}
+[3.954658] (-) TimerEvent: {}
+[4.058845] (-) TimerEvent: {}
+[4.162450] (-) TimerEvent: {}
+[4.263888] (-) TimerEvent: {}
+[4.367697] (-) TimerEvent: {}
+[4.468702] (-) TimerEvent: {}
+[4.570968] (-) TimerEvent: {}
+[4.674094] (-) TimerEvent: {}
+[4.776102] (-) TimerEvent: {}
+[4.878659] (-) TimerEvent: {}
+[4.981125] (-) TimerEvent: {}
+[5.083451] (-) TimerEvent: {}
+[5.187304] (-) TimerEvent: {}
+[5.292654] (-) TimerEvent: {}
+[5.394028] (-) TimerEvent: {}
+[5.496188] (-) TimerEvent: {}
+[5.597097] (-) TimerEvent: {}
+[5.700483] (-) TimerEvent: {}
+[5.801924] (-) TimerEvent: {}
+[5.906439] (-) TimerEvent: {}
+[6.014761] (-) TimerEvent: {}
+[6.116928] (-) TimerEvent: {}
+[6.220614] (-) TimerEvent: {}
+[6.325279] (-) TimerEvent: {}
+[6.427248] (-) TimerEvent: {}
+[6.528624] (-) TimerEvent: {}
+[6.629537] (-) TimerEvent: {}
+[6.734933] (-) TimerEvent: {}
+[6.836216] (-) TimerEvent: {}
+[6.937859] (-) TimerEvent: {}
+[7.039680] (-) TimerEvent: {}
+[7.140743] (-) TimerEvent: {}
+[7.245789] (-) TimerEvent: {}
+[7.348660] (-) TimerEvent: {}
+[7.454072] (-) TimerEvent: {}
+[7.556261] (-) TimerEvent: {}
+[7.657611] (-) TimerEvent: {}
+[7.758605] (-) TimerEvent: {}
+[7.860348] (-) TimerEvent: {}
+[7.960810] (-) TimerEvent: {}
+[8.061517] (-) TimerEvent: {}
+[8.162706] (-) TimerEvent: {}
+[8.266753] (-) TimerEvent: {}
+[8.368982] (-) TimerEvent: {}
+[8.470899] (-) TimerEvent: {}
+[8.573948] (-) TimerEvent: {}
+[8.674837] (-) TimerEvent: {}
+[8.775585] (-) TimerEvent: {}
+[8.876994] (-) TimerEvent: {}
+[8.978126] (-) TimerEvent: {}
+[9.078960] (-) TimerEvent: {}
+[9.180753] (-) TimerEvent: {}
+[9.281497] (-) TimerEvent: {}
+[9.383566] (-) TimerEvent: {}
+[9.484684] (-) TimerEvent: {}
+[9.586411] (-) TimerEvent: {}
+[9.687205] (-) TimerEvent: {}
+[9.788091] (-) TimerEvent: {}
+[9.889218] (-) TimerEvent: {}
+[9.991386] (-) TimerEvent: {}
+[10.095396] (-) TimerEvent: {}
+[10.198080] (-) TimerEvent: {}
+[10.301371] (-) TimerEvent: {}
+[10.402299] (-) TimerEvent: {}
+[10.502874] (-) TimerEvent: {}
+[10.606198] (-) TimerEvent: {}
+[10.707772] (-) TimerEvent: {}
+[10.811073] (-) TimerEvent: {}
+[10.912850] (-) TimerEvent: {}
+[11.014530] (-) TimerEvent: {}
+[11.115375] (-) TimerEvent: {}
+[11.216527] (-) TimerEvent: {}
+[11.328333] (-) TimerEvent: {}
+[11.429794] (-) TimerEvent: {}
+[11.531221] (-) TimerEvent: {}
+[11.635370] (-) TimerEvent: {}
+[11.739242] (-) TimerEvent: {}
+[11.842826] (-) TimerEvent: {}
+[11.947343] (-) TimerEvent: {}
+[12.054088] (-) TimerEvent: {}
+[12.155676] (-) TimerEvent: {}
+[12.259527] (-) TimerEvent: {}
+[12.362180] (-) TimerEvent: {}
+[12.463748] (-) TimerEvent: {}
+[12.565138] (-) TimerEvent: {}
+[12.667765] (-) TimerEvent: {}
+[12.769076] (-) TimerEvent: {}
+[12.870231] (-) TimerEvent: {}
+[12.971934] (-) TimerEvent: {}
+[13.072757] (-) TimerEvent: {}
+[13.174807] (-) TimerEvent: {}
+[13.276081] (-) TimerEvent: {}
+[13.379414] (-) TimerEvent: {}
+[13.481889] (-) TimerEvent: {}
+[13.583872] (-) TimerEvent: {}
+[13.688088] (-) TimerEvent: {}
+[13.789821] (-) TimerEvent: {}
+[13.890972] (-) TimerEvent: {}
+[13.991586] (-) TimerEvent: {}
+[14.092500] (-) TimerEvent: {}
+[14.193355] (-) TimerEvent: {}
+[14.297435] (-) TimerEvent: {}
+[14.398760] (-) TimerEvent: {}
+[14.501835] (-) TimerEvent: {}
+[14.603822] (-) TimerEvent: {}
+[14.705688] (-) TimerEvent: {}
+[14.810752] (-) TimerEvent: {}
+[14.911875] (-) TimerEvent: {}
+[15.014749] (-) TimerEvent: {}
+[15.115271] (-) TimerEvent: {}
+[15.215653] (-) TimerEvent: {}
+[15.316499] (-) TimerEvent: {}
+[15.420208] (-) TimerEvent: {}
+[15.521628] (-) TimerEvent: {}
+[15.622552] (-) TimerEvent: {}
+[15.723537] (-) TimerEvent: {}
+[15.827082] (-) TimerEvent: {}
+[15.927894] (-) TimerEvent: {}
+[16.030345] (-) TimerEvent: {}
+[16.131751] (-) TimerEvent: {}
+[16.232317] (-) TimerEvent: {}
+[16.333458] (-) TimerEvent: {}
+[16.434791] (-) TimerEvent: {}
+[16.539118] (-) TimerEvent: {}
+[16.640316] (-) TimerEvent: {}
+[16.741244] (-) TimerEvent: {}
+[16.842229] (-) TimerEvent: {}
+[16.943227] (-) TimerEvent: {}
+[17.044238] (-) TimerEvent: {}
+[17.145904] (-) TimerEvent: {}
+[17.247718] (-) TimerEvent: {}
+[17.352108] (-) TimerEvent: {}
+[17.455304] (-) TimerEvent: {}
+[17.556793] (-) TimerEvent: {}
+[17.658221] (-) TimerEvent: {}
+[17.759790] (-) TimerEvent: {}
+[17.861550] (-) TimerEvent: {}
+[17.965387] (-) TimerEvent: {}
+[18.067830] (-) TimerEvent: {}
+[18.168668] (-) TimerEvent: {}
+[18.269492] (-) TimerEvent: {}
+[18.370539] (-) TimerEvent: {}
+[18.472093] (-) TimerEvent: {}
+[18.574337] (-) TimerEvent: {}
+[18.675665] (-) TimerEvent: {}
+[18.777616] (-) TimerEvent: {}
+[18.879177] (-) TimerEvent: {}
+[18.979935] (-) TimerEvent: {}
+[19.081512] (-) TimerEvent: {}
+[19.185246] (-) TimerEvent: {}
+[19.287250] (-) TimerEvent: {}
+[19.391306] (-) TimerEvent: {}
+[19.503864] (-) TimerEvent: {}
+[19.605102] (-) TimerEvent: {}
+[19.709457] (-) TimerEvent: {}
+[19.816633] (-) TimerEvent: {}
+[19.918370] (-) TimerEvent: {}
+[20.019047] (-) TimerEvent: {}
+[20.119826] (-) TimerEvent: {}
+[20.222358] (-) TimerEvent: {}
+[20.324880] (-) TimerEvent: {}
+[20.428322] (-) TimerEvent: {}
+[20.530481] (-) TimerEvent: {}
+[20.631968] (-) TimerEvent: {}
+[20.733714] (-) TimerEvent: {}
+[20.837262] (-) TimerEvent: {}
+[20.938796] (-) TimerEvent: {}
+[21.042885] (-) TimerEvent: {}
+[21.143683] (-) TimerEvent: {}
+[21.244542] (-) TimerEvent: {}
+[21.347522] (-) TimerEvent: {}
+[21.452164] (-) TimerEvent: {}
+[21.556627] (-) TimerEvent: {}
+[21.658573] (-) TimerEvent: {}
+[21.759626] (-) TimerEvent: {}
+[21.861440] (-) TimerEvent: {}
+[21.962780] (-) TimerEvent: {}
+[22.066475] (-) TimerEvent: {}
+[22.169100] (-) TimerEvent: {}
+[22.273361] (-) TimerEvent: {}
+[22.374088] (-) TimerEvent: {}
+[22.474758] (-) TimerEvent: {}
+[22.576284] (-) TimerEvent: {}
+[22.676965] (-) TimerEvent: {}
+[22.778130] (-) TimerEvent: {}
+[22.882198] (-) TimerEvent: {}
+[22.983659] (-) TimerEvent: {}
+[23.085653] (-) TimerEvent: {}
+[23.192614] (-) TimerEvent: {}
+[23.295143] (-) TimerEvent: {}
+[23.396288] (-) TimerEvent: {}
+[23.498350] (-) TimerEvent: {}
+[23.601244] (-) TimerEvent: {}
+[23.702950] (-) TimerEvent: {}
+[23.805576] (-) TimerEvent: {}
+[23.908790] (-) TimerEvent: {}
+[24.010142] (-) TimerEvent: {}
+[24.110878] (-) TimerEvent: {}
+[24.214511] (-) TimerEvent: {}
+[24.318999] (-) TimerEvent: {}
+[24.420602] (-) TimerEvent: {}
+[24.522057] (-) TimerEvent: {}
+[24.622687] (-) TimerEvent: {}
+[24.725439] (-) TimerEvent: {}
+[24.828271] (-) TimerEvent: {}
+[24.929128] (-) TimerEvent: {}
+[25.029865] (-) TimerEvent: {}
+[25.130914] (-) TimerEvent: {}
+[25.231980] (-) TimerEvent: {}
+[25.332960] (-) TimerEvent: {}
+[25.434045] (-) TimerEvent: {}
+[25.535549] (-) TimerEvent: {}
+[25.638131] (-) TimerEvent: {}
+[25.739528] (-) TimerEvent: {}
+[25.840771] (-) TimerEvent: {}
+[25.942169] (-) TimerEvent: {}
+[26.042780] (-) TimerEvent: {}
+[26.143532] (-) TimerEvent: {}
+[26.245929] (-) TimerEvent: {}
+[26.347888] (-) TimerEvent: {}
+[26.449921] (-) TimerEvent: {}
+[26.551039] (-) TimerEvent: {}
+[26.653163] (-) TimerEvent: {}
+[26.754378] (-) TimerEvent: {}
+[26.855841] (-) TimerEvent: {}
+[26.956592] (-) TimerEvent: {}
+[27.057440] (-) TimerEvent: {}
+[27.159267] (-) TimerEvent: {}
+[27.260577] (-) TimerEvent: {}
+[27.369337] (-) TimerEvent: {}
+[27.473756] (-) TimerEvent: {}
+[27.574689] (-) TimerEvent: {}
+[27.679606] (-) TimerEvent: {}
+[27.783278] (-) TimerEvent: {}
+[27.884142] (-) TimerEvent: {}
+[27.984915] (-) TimerEvent: {}
+[28.086239] (-) TimerEvent: {}
+[28.187362] (-) TimerEvent: {}
+[28.288001] (-) TimerEvent: {}
+[28.388543] (-) TimerEvent: {}
+[28.490471] (-) TimerEvent: {}
+[28.591115] (-) TimerEvent: {}
+[28.691771] (-) TimerEvent: {}
+[28.792688] (-) TimerEvent: {}
+[28.893811] (-) TimerEvent: {}
+[28.998103] (-) TimerEvent: {}
+[29.099097] (-) TimerEvent: {}
+[29.199997] (-) TimerEvent: {}
+[29.301044] (-) TimerEvent: {}
+[29.403821] (-) TimerEvent: {}
+[29.506136] (-) TimerEvent: {}
+[29.610362] (-) TimerEvent: {}
+[29.713059] (-) TimerEvent: {}
+[29.815950] (-) TimerEvent: {}
+[29.918309] (-) TimerEvent: {}
+[30.020485] (-) TimerEvent: {}
+[30.122684] (-) TimerEvent: {}
+[30.223702] (-) TimerEvent: {}
+[30.327427] (-) TimerEvent: {}
+[30.431347] (-) TimerEvent: {}
+[30.532428] (-) TimerEvent: {}
+[30.635873] (-) TimerEvent: {}
+[30.740298] (-) TimerEvent: {}
+[30.841611] (-) TimerEvent: {}
+[30.942894] (-) TimerEvent: {}
+[31.043553] (-) TimerEvent: {}
+[31.144887] (-) TimerEvent: {}
+[31.248834] (-) TimerEvent: {}
+[31.350450] (-) TimerEvent: {}
+[31.452934] (-) TimerEvent: {}
+[31.554221] (-) TimerEvent: {}
+[31.655581] (-) TimerEvent: {}
+[31.756663] (-) TimerEvent: {}
+[31.861129] (-) TimerEvent: {}
+[31.963377] (-) TimerEvent: {}
+[32.065462] (-) TimerEvent: {}
+[32.166908] (-) TimerEvent: {}
+[32.268135] (-) TimerEvent: {}
+[32.374271] (-) TimerEvent: {}
+[32.476633] (-) TimerEvent: {}
+[32.580274] (-) TimerEvent: {}
+[32.682438] (-) TimerEvent: {}
+[32.783718] (-) TimerEvent: {}
+[32.884868] (-) TimerEvent: {}
+[32.988388] (-) TimerEvent: {}
+[33.089904] (-) TimerEvent: {}
+[33.190601] (-) TimerEvent: {}
+[33.291384] (-) TimerEvent: {}
+[33.394594] (-) TimerEvent: {}
+[33.512949] (-) TimerEvent: {}
+[33.614116] (-) TimerEvent: {}
+[33.715660] (-) TimerEvent: {}
+[33.817511] (-) TimerEvent: {}
+[33.920495] (-) TimerEvent: {}
+[34.022568] (-) TimerEvent: {}
+[34.127818] (-) TimerEvent: {}
+[34.229590] (-) TimerEvent: {}
+[34.330567] (-) TimerEvent: {}
+[34.433258] (-) TimerEvent: {}
+[34.538401] (-) TimerEvent: {}
+[34.639927] (-) TimerEvent: {}
+[34.743290] (-) TimerEvent: {}
+[34.844747] (-) TimerEvent: {}
+[34.947492] (-) TimerEvent: {}
+[35.049211] (-) TimerEvent: {}
+[35.152304] (-) TimerEvent: {}
+[35.253194] (-) TimerEvent: {}
+[35.357169] (-) TimerEvent: {}
+[35.458206] (-) TimerEvent: {}
+[35.561225] (-) TimerEvent: {}
+[35.663227] (-) TimerEvent: {}
+[35.766515] (-) TimerEvent: {}
+[35.868704] (-) TimerEvent: {}
+[35.970711] (-) TimerEvent: {}
+[36.071645] (-) TimerEvent: {}
+[36.172878] (-) TimerEvent: {}
+[36.278086] (-) TimerEvent: {}
+[36.379217] (-) TimerEvent: {}
+[36.480126] (-) TimerEvent: {}
+[36.582740] (-) TimerEvent: {}
+[36.683577] (-) TimerEvent: {}
+[36.784546] (-) TimerEvent: {}
+[36.885572] (-) TimerEvent: {}
+[36.986292] (-) TimerEvent: {}
+[37.087037] (-) TimerEvent: {}
+[37.187888] (-) TimerEvent: {}
+[37.291798] (-) TimerEvent: {}
+[37.392934] (-) TimerEvent: {}
+[37.493742] (-) TimerEvent: {}
+[37.594614] (-) TimerEvent: {}
+[37.699154] (-) TimerEvent: {}
+[37.800733] (-) TimerEvent: {}
+[37.902057] (-) TimerEvent: {}
+[38.003082] (-) TimerEvent: {}
+[38.104379] (-) TimerEvent: {}
+[38.205485] (-) TimerEvent: {}
+[38.306698] (-) TimerEvent: {}
+[38.411082] (-) TimerEvent: {}
+[38.513594] (-) TimerEvent: {}
+[38.616485] (-) TimerEvent: {}
+[38.717673] (-) TimerEvent: {}
+[38.822524] (-) TimerEvent: {}
+[38.924062] (-) TimerEvent: {}
+[39.024940] (-) TimerEvent: {}
+[39.125470] (-) TimerEvent: {}
+[39.226258] (-) TimerEvent: {}
+[39.328287] (-) TimerEvent: {}
+[39.431304] (-) TimerEvent: {}
+[39.537129] (-) TimerEvent: {}
+[39.640735] (-) TimerEvent: {}
+[39.741822] (-) TimerEvent: {}
+[39.846642] (-) TimerEvent: {}
+[39.948772] (-) TimerEvent: {}
+[40.050318] (-) TimerEvent: {}
+[40.152531] (-) TimerEvent: {}
+[40.254635] (-) TimerEvent: {}
+[40.357493] (-) TimerEvent: {}
+[40.458302] (-) TimerEvent: {}
+[40.559647] (-) TimerEvent: {}
+[40.662339] (-) TimerEvent: {}
+[40.763920] (-) TimerEvent: {}
+[40.874523] (-) TimerEvent: {}
+[40.976330] (-) TimerEvent: {}
+[41.078304] (-) TimerEvent: {}
+[41.179797] (-) TimerEvent: {}
+[41.280918] (-) TimerEvent: {}
+[41.382204] (-) TimerEvent: {}
+[41.488930] (-) TimerEvent: {}
+[41.590502] (-) TimerEvent: {}
+[41.691869] (-) TimerEvent: {}
+[41.793121] (-) TimerEvent: {}
+[41.894133] (-) TimerEvent: {}
+[41.996095] (-) TimerEvent: {}
+[42.098788] (-) TimerEvent: {}
+[42.200866] (-) TimerEvent: {}
+[42.307886] (-) TimerEvent: {}
+[42.414935] (-) TimerEvent: {}
+[42.518419] (-) TimerEvent: {}
+[42.622243] (-) TimerEvent: {}
+[42.723477] (-) TimerEvent: {}
+[42.830438] (-) TimerEvent: {}
+[42.935552] (-) TimerEvent: {}
+[43.043380] (-) TimerEvent: {}
+[43.142328] (ground_plane_estimation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ground_plane_estimation_node\x1b[0m\n'}
+[43.145295] (-) TimerEvent: {}
+[43.248512] (-) TimerEvent: {}
+[43.350565] (-) TimerEvent: {}
+[43.455046] (-) TimerEvent: {}
+[43.557738] (-) TimerEvent: {}
+[43.661463] (-) TimerEvent: {}
+[43.767426] (-) TimerEvent: {}
+[43.871178] (-) TimerEvent: {}
+[43.973238] (-) TimerEvent: {}
+[44.074436] (-) TimerEvent: {}
+[44.176679] (-) TimerEvent: {}
+[44.278322] (-) TimerEvent: {}
+[44.382384] (-) TimerEvent: {}
+[44.484284] (-) TimerEvent: {}
+[44.593750] (-) TimerEvent: {}
+[44.695237] (-) TimerEvent: {}
+[44.798113] (-) TimerEvent: {}
+[44.903875] (-) TimerEvent: {}
+[45.006886] (-) TimerEvent: {}
+[45.108205] (-) TimerEvent: {}
+[45.210219] (-) TimerEvent: {}
+[45.311550] (-) TimerEvent: {}
+[45.414551] (-) TimerEvent: {}
+[45.515945] (-) TimerEvent: {}
+[45.621244] (-) TimerEvent: {}
+[45.724642] (-) TimerEvent: {}
+[45.825596] (-) TimerEvent: {}
+[45.928800] (-) TimerEvent: {}
+[46.037925] (-) TimerEvent: {}
+[46.139796] (-) TimerEvent: {}
+[46.242558] (-) TimerEvent: {}
+[46.345155] (-) TimerEvent: {}
+[46.450502] (-) TimerEvent: {}
+[46.553487] (-) TimerEvent: {}
+[46.656153] (-) TimerEvent: {}
+[46.757626] (-) TimerEvent: {}
+[46.859348] (-) TimerEvent: {}
+[46.959982] (-) TimerEvent: {}
+[47.061083] (-) TimerEvent: {}
+[47.161906] (-) TimerEvent: {}
+[47.262917] (-) TimerEvent: {}
+[47.365589] (-) TimerEvent: {}
+[47.466808] (-) TimerEvent: {}
+[47.569434] (-) TimerEvent: {}
+[47.670469] (-) TimerEvent: {}
+[47.771817] (-) TimerEvent: {}
+[47.872988] (-) TimerEvent: {}
+[47.975761] (-) TimerEvent: {}
+[48.076986] (-) TimerEvent: {}
+[48.178952] (-) TimerEvent: {}
+[48.280311] (-) TimerEvent: {}
+[48.364148] (ground_plane_estimation) StdoutLine: {'line': b'[100%] Built target ground_plane_estimation_node\n'}
+[48.380501] (-) TimerEvent: {}
+[48.402086] (ground_plane_estimation) CommandEnded: {'returncode': 0}
+[48.480185] (ground_plane_estimation) JobProgress: {'identifier': 'ground_plane_estimation', 'progress': 'install'}
+[48.490597] (ground_plane_estimation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/src/build/ground_plane_estimation'], 'cwd': '/workspace/src/build/ground_plane_estimation', 'env': OrderedDict([('HOSTNAME', 'hx'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.102.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1509fbb7-a3d0-4927-b902-227f73d19f50.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/workspace/src/install:/workspace/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('WORKSPACE_DIR', '/workspace'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/vscode/vscode-server/bin/linux-x64/488a1f239235055e34e673291fb8d8c810886f81/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c52ddf65534b7b46.txt'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-015b68bfbe.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-a12d778f-806f-4745-bba5-60e319e92494.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/src/build/ground_plane_estimation'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/src/install/unitree_lidar_ros2:/workspace/src/install/point_lio:/workspace/src/install/ground_plane_estimation:/workspace/install/ground_plane_estimation:/opt/ros/foxy')]), 'shell': False}
+[48.493794] (-) TimerEvent: {}
+[48.508111] (ground_plane_estimation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.508656] (ground_plane_estimation) StdoutLine: {'line': b'-- Installing: /workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node\n'}
+[48.521540] (ground_plane_estimation) StdoutLine: {'line': b'-- Set runtime path of "/workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node" to ""\n'}
+[48.524067] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch\n'}
+[48.524528] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/ground_plane_estimation.launch.py\n'}
+[48.524629] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/__pycache__\n'}
+[48.524714] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/__pycache__/ground_plane_estimation.launch.cpython-38.pyc\n'}
+[48.524805] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/point_lio_with_ground_estimation.launch.py\n'}
+[48.524958] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/config\n'}
+[48.525046] (ground_plane_estimation) StdoutLine: {'line': b'-- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/config/ground_plane_estimation.yaml\n'}
+[48.525127] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/rviz\n'}
+[48.525196] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/rviz/ground_plane_estimation.rviz\n'}
+[48.525289] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/package_run_dependencies/ground_plane_estimation\n'}
+[48.525377] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/parent_prefix_path/ground_plane_estimation\n'}
+[48.525458] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.sh\n'}
+[48.525534] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.dsv\n'}
+[48.525612] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.sh\n'}
+[48.525692] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.dsv\n'}
+[48.525769] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.bash\n'}
+[48.525844] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.sh\n'}
+[48.525922] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.zsh\n'}
+[48.526004] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.dsv\n'}
+[48.526089] (ground_plane_estimation) StdoutLine: {'line': b'-- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.dsv\n'}
+[48.526159] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/packages/ground_plane_estimation\n'}
+[48.526226] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig.cmake\n'}
+[48.526309] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig-version.cmake\n'}
+[48.526390] (ground_plane_estimation) StdoutLine: {'line': b'-- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.xml\n'}
+[48.534731] (ground_plane_estimation) CommandEnded: {'returncode': 0}
+[48.594114] (-) TimerEvent: {}
+[48.657426] (ground_plane_estimation) JobEnded: {'identifier': 'ground_plane_estimation', 'rc': 0}
+[48.658982] (-) EventReactorShutdown: {}

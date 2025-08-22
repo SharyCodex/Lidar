@@ -1,0 +1,3 @@
+make[2]: *** [CMakeFiles/pointlio_mapping.dir/build.make:63: CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o] Terminated
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pointlio_mapping.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

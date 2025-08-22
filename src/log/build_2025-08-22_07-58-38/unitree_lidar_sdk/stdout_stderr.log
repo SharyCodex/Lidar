@@ -1,0 +1,4 @@
+[ 75%] Built target example_lidar_udp
+[ 75%] Built target unilidar_subscriber_udp
+[ 75%] Built target unilidar_publisher_udp
+[100%] Built target example_lidar

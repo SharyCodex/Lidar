@@ -1,0 +1,2 @@
+Invoking command in '/workspace/src/build/ground_plane_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+Invoked command in '/workspace/src/build/ground_plane_estimation' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16

@@ -1,0 +1,4 @@
+Invoking command in '/workspace/src/build/ground_plane_estimation': /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+Invoking command in '/workspace/src/build/ground_plane_estimation': /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation
+Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation

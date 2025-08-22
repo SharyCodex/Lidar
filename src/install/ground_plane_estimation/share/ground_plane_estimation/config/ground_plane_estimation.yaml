@@ -1,0 +1,24 @@
+ground_plane_estimation:
+  ros__parameters:
+    # Ground plane RANSAC
+    plane_inlier_threshold: 0.03         # meters
+    eps_angle_deg: 8.0                   # degrees from +Z
+
+    # Plane-relative slice to catch rails
+    rail_slice_m: [0.0, 0.15]           # meters above ground plane [min, max]
+
+    # Clustering
+    min_cluster_size: 5
+    max_cluster_size: 25000
+    cluster_tolerance: 0.08              # meters
+
+    # Processing
+    voxel_leaf_size: 0.01                # meters
+
+    # Topics
+    input_topic: "/cloud_registered"
+    output_topic: "/clustered_objects"
+    marker_topic: "/object_markers"
+    ground_topic: "/ground_cloud"
+    non_ground_topic: "/non_ground_cloud"
+    height_slice_topic: "/height_slice_cloud"

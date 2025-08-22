@@ -1,0 +1,35 @@
+[0.243s] Invoking command in '/workspace/src/build/ground_plane_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+[0.425s] [35m[1mScanning dependencies of target ground_plane_estimation_node[0m
+[0.615s] [ 50%] [32mBuilding CXX object CMakeFiles/ground_plane_estimation_node.dir/src/ground_plane_estimation_node.cpp.o[0m
+[43.139s] [100%] [32m[1mLinking CXX executable ground_plane_estimation_node[0m
+[48.359s] [100%] Built target ground_plane_estimation_node
+[48.405s] Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+[48.487s] Invoking command in '/workspace/src/build/ground_plane_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation
+[48.503s] -- Install configuration: ""
+[48.503s] -- Installing: /workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node
+[48.517s] -- Set runtime path of "/workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node" to ""
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/ground_plane_estimation.launch.py
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/__pycache__
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/__pycache__/ground_plane_estimation.launch.cpython-38.pyc
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/launch/point_lio_with_ground_estimation.launch.py
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/config
+[48.519s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/config/ground_plane_estimation.yaml
+[48.519s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/rviz
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/rviz/ground_plane_estimation.rviz
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/package_run_dependencies/ground_plane_estimation
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/parent_prefix_path/ground_plane_estimation
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.sh
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.dsv
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.sh
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.dsv
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.bash
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.sh
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.zsh
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.dsv
+[48.520s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.dsv
+[48.520s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/packages/ground_plane_estimation
+[48.521s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig.cmake
+[48.521s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig-version.cmake
+[48.521s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.xml
+[48.536s] Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation

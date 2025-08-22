@@ -1,0 +1,6 @@
+Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /workspace/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio
+Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /workspace/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio
+Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/point_lio -- -j16 -l16
+Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/point_lio -- -j16 -l16
+Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/point_lio
+Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/point_lio

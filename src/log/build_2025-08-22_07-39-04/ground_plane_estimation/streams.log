@@ -1,0 +1,26 @@
+[0.027s] Invoking command in '/workspace/src/build/ground_plane_estimation': /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+[0.073s] [35m[1mScanning dependencies of target ground_plane_estimation_node[0m
+[0.131s] [ 50%] [32mBuilding CXX object CMakeFiles/ground_plane_estimation_node.dir/src/ground_plane_estimation_node.cpp.o[0m
+[10.895s] [100%] [32m[1mLinking CXX executable ground_plane_estimation_node[0m
+[11.937s] [100%] Built target ground_plane_estimation_node
+[11.946s] Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': /usr/bin/cmake --build /workspace/src/build/ground_plane_estimation -- -j16 -l16
+[11.967s] Invoking command in '/workspace/src/build/ground_plane_estimation': /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation
+[11.975s] -- Install configuration: ""
+[11.975s] -- Installing: /workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node
+[11.977s] -- Set runtime path of "/workspace/src/install/ground_plane_estimation/lib/ground_plane_estimation/ground_plane_estimation_node" to ""
+[11.977s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/package_run_dependencies/ground_plane_estimation
+[11.977s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/parent_prefix_path/ground_plane_estimation
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.sh
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/ament_prefix_path.dsv
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.sh
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/environment/path.dsv
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.bash
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.sh
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.zsh
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/local_setup.dsv
+[11.978s] -- Installing: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.dsv
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ament_index/resource_index/packages/ground_plane_estimation
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig.cmake
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/cmake/ground_plane_estimationConfig-version.cmake
+[11.978s] -- Up-to-date: /workspace/src/install/ground_plane_estimation/share/ground_plane_estimation/package.xml
+[11.981s] Invoked command in '/workspace/src/build/ground_plane_estimation' returned '0': /usr/bin/cmake --install /workspace/src/build/ground_plane_estimation

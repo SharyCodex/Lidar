@@ -1,0 +1,48 @@
+[0.059s] Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/point_lio -- -j16 -l16
+[0.138s] [35m[1mScanning dependencies of target pointlio_mapping[0m
+[0.267s] [ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[42.386s] [ 33%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[43.448s] [100%] Built target pointlio_mapping
+[43.459s] Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /workspace/src/build/point_lio -- -j16 -l16
+[43.496s] Invoking command in '/workspace/src/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/point_lio
+[43.504s] -- Install configuration: ""
+[43.504s] -- Installing: /workspace/src/install/point_lio/lib/point_lio/pointlio_mapping
+[43.507s] -- Set runtime path of "/workspace/src/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+[43.507s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config
+[43.508s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/velody16.yaml
+[43.508s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/horizon.yaml
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/ouster64.yaml
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/mid360.yaml
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/config/avia.yaml
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[43.509s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+[43.510s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[43.510s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/rviz_cfg
+[43.510s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[43.510s] -- Up-to-date: /workspace/src/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[43.511s] -- Up-to-date: /workspace/src/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[43.511s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[43.514s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[43.514s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/path.sh
+[43.514s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/environment/path.dsv
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.bash
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.sh
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.zsh
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/local_setup.dsv
+[43.515s] -- Installing: /workspace/src/install/point_lio/share/point_lio/package.dsv
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[43.515s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[43.516s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[43.516s] -- Up-to-date: /workspace/src/install/point_lio/share/point_lio/package.xml
+[43.516s] Invoked command in '/workspace/src/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /workspace/src/build/point_lio

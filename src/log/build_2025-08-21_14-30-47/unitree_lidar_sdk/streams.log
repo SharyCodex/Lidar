@@ -1,0 +1,18 @@
+[0.028s] Invoking command in '/workspace/src/build/unitree_lidar_sdk': /usr/bin/cmake /workspace/src/unilidar_sdk/unitree_lidar_sdk -DCMAKE_INSTALL_PREFIX=/workspace/src/install/unitree_lidar_sdk
+[0.082s] -- The C compiler identification is GNU 9.4.0
+[0.137s] -- The CXX compiler identification is GNU 9.4.0
+[0.142s] -- Check for working C compiler: /usr/bin/cc
+[0.204s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.205s] -- Detecting C compiler ABI info
+[0.270s] -- Detecting C compiler ABI info - done
+[0.287s] -- Detecting C compile features
+[0.288s] -- Detecting C compile features - done
+[0.293s] -- Check for working CXX compiler: /usr/bin/c++
+[0.374s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.374s] -- Detecting CXX compiler ABI info
+[0.445s] -- Detecting CXX compiler ABI info - done
+[0.456s] -- Detecting CXX compile features
+[0.456s] -- Detecting CXX compile features - done
+[0.458s] -- Configuring done
+[0.461s] -- Generating done
+[0.461s] -- Build files have been written to: /workspace/src/build/unitree_lidar_sdk

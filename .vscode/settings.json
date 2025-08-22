@@ -1,0 +1,24 @@
+{
+    "workbench.colorCustomizations": {
+        "[Default Dark+]": {
+            "sideBar.background": "#130b1d",
+            "sideBar.foreground": "#c5c5c5",
+            "sideBar.border": "#000000",
+            "list.activeSelectionForeground": "#bb7616",
+            "list.activeSelectionBackground": "#264d81",
+            "list.inactiveSelectionForeground": "#e0c1db",
+            "list.hoverForeground": "#FFD700",
+            "tab.activeModifiedBorder": "#FF4500",
+            "menu.background": "#f0f0f0",
+            "menu.foreground": "#1f1919",
+            "menu.selectionBackground": "#cce5ff",
+            "menu.selectionForeground": "#000000",
+            "menu.border": "#cccccc",
+            "menu.separatorBackground": "#12152e",
+            "titleBar.activeBackground": "#1f1919",
+            "titleBar.activeForeground": "#f0f0f0",
+            "titleBar.inactiveBackground": "#2d2d30",
+            "titleBar.inactiveForeground": "#c5c5c5"
+        }
+    }
+}

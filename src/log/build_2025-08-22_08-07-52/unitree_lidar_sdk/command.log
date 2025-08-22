@@ -1,0 +1,2 @@
+Invoking command in '/workspace/src/build/unitree_lidar_sdk': /usr/bin/cmake --build /workspace/src/build/unitree_lidar_sdk -- -j16 -l16
+Invoked command in '/workspace/src/build/unitree_lidar_sdk' returned '0': /usr/bin/cmake --build /workspace/src/build/unitree_lidar_sdk -- -j16 -l16

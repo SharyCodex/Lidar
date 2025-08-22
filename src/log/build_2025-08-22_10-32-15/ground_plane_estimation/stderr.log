@@ -1,0 +1,10 @@
+[01m[K/workspace/src/ground_plane_estimation/src/ground_plane_estimation_node.cpp:147:47:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+  147 |         seg.setDistanceThreshold(plane_inlier_[01;31m[K`[m[Kthreshold_);
+      |                                               [01;31m[K^[m[K
+[01m[K/workspace/src/ground_plane_estimation/src/ground_plane_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid GroundPlaneEstimation::detectGroundPlane(const Ptr&, pcl::PointCloud<pcl::PointXYZI>::Ptr&, pcl::PointCloud<pcl::PointXYZI>::Ptr&, pcl::ModelCoefficients::Ptr&)[m[K’:
+[01m[K/workspace/src/ground_plane_estimation/src/ground_plane_estimation_node.cpp:147:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kplane_inlier_[m[K’ was not declared in this scope
+  147 |         seg.setDistanceThreshold([01;31m[Kplane_inlier_[m[K`threshold_);
+      |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ground_plane_estimation_node.dir/build.make:63: CMakeFiles/ground_plane_estimation_node.dir/src/ground_plane_estimation_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ground_plane_estimation_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

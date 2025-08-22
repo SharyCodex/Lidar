@@ -1,0 +1,2 @@
+Invoking command in '/workspace/src/build/point_lio': /usr/bin/cmake /workspace/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio
+Invoked command in '/workspace/src/build/point_lio' returned '1': /usr/bin/cmake /workspace/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/point_lio

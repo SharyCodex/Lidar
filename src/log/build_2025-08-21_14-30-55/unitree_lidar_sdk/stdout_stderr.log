@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target unilidar_publisher_udp[0m
+[35m[1mScanning dependencies of target unilidar_subscriber_udp[0m
+[35m[1mScanning dependencies of target example_lidar_udp[0m
+[35m[1mScanning dependencies of target example_lidar[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/unilidar_publisher_udp.dir/examples/unilidar_publisher_udp.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example_lidar_udp.dir/examples/example_lidar_udp.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/unilidar_subscriber_udp.dir/examples/unilidar_subscriber_udp.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example_lidar.dir/examples/example_lidar.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/unilidar_subscriber_udp[0m
+[ 75%] [32m[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/example_lidar[0m
+[ 87%] [32m[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/example_lidar_udp[0m
+[100%] [32m[1mLinking CXX executable /workspace/src/unilidar_sdk/unitree_lidar_sdk/bin/unilidar_publisher_udp[0m
+[100%] Built target unilidar_subscriber_udp
+[100%] Built target example_lidar
+[100%] Built target example_lidar_udp
+[100%] Built target unilidar_publisher_udp
